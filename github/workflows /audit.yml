@@ -1,0 +1,24 @@
+name: Daily Audit
+on:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: pip install anthropic
+      
+      - name: Run Audit
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python audit.py 
+
