@@ -1,0 +1,13 @@
+استخدم pre-build-security-audit و comprehensive-testing-validation على مشروع Ahgiz:
+
+Database: Supabase (v6)
+Tech Stack: React Native + Node.js
+Integrations: ZainCash, WhatsApp, Daily.co
+
+أعطني:
+1. هل المشروع جاهز؟
+2. ما الثغرات؟
+3. خطة الإصلاح
+4. خطوات البناء
+5.  جميع ملفات المشروع  النهائية من  اجل البناء 
+
